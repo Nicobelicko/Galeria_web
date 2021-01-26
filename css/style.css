@@ -101,4 +101,43 @@ th{
     text-decoration: aqua;
 
 }
+#body-registro{
+    background-image: url("../images/fondo-registro.jpg");
+}
+#div-ingreso-registro{
+    background-color: rgb(255, 255, 255);
+    width: 550px;
+    height: 500px;
+    position:relative;
+    right: 1%;
+    border-radius: 9%;
+    border-style: solid;
+    border-color: rgb(17, 65, 110);
 
+}
+#a-registro{
+    font-size: 20px;
+    position:relative;
+    top: 24.9%;
+    left: 57%;
+}
+#p-registro{
+    font-size: 20px;
+    position:relative;
+    top: 33.5%;
+    left: 23%;
+}
+#email-user{
+    position: relative;
+    left:81px;
+}
+#btn-submit-registro{
+    background-color:rgb(223, 223, 223);
+    height: 50px;
+    width: 170px;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    left: 43%;
+    bottom: 25%;
+}
