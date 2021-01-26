@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css?rnd=100" type="text/css">
 </head>
-<body>
+<body id="body-login">
     <form action="" method="POST">
+        <div class="div-ingreso">
+            <h1>Iniciar Sesion</h1>
+            <div class="div-ingreso-datos">
+                <label class="login">Usuario</label>
+                <input class="login" type="text" id="username" name="nombre-usuario"> 
+                
 
-        <div>
-            <input type="text" id="name" name="nombre_usuario">
+            </div>
+            <div class="div-ingreso-datos">
+                <label class="login">Contraseña </label>
+                <input class="login" type="password" id="user-password" name="password-usuario"> 
+                
+            </div>
+            <p id="p-login">¿No tiene cuenta?</p>
+            <a id="a-login" href="registro.html">Registrarse</a>
         </div>
-
     </form>
 </body>
 </html>

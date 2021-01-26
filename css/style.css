@@ -1,4 +1,4 @@
-.div-index{
+.div-ingreso{
     background-color: rgb(255, 255, 255);
     width: 500px;
     height: 450px;
@@ -64,5 +64,41 @@ th{
 
    
 }
+#body-login{
+    background-image: url("../images/fondo-login.jpg");
+    
+}
+.div-ingreso-datos{
+    
+    position: relative;
+    top: 15%;
+    left: 15%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 5px 0px 20px 0px;
+    
+}
+#username{
+    position: relative;
+    left: 70px;
 
+}
+#user-password{
+    position: relative; 
+    left:31px;
+}
+#p-login{
+    font-size: 20px;
+    position:relative;
+    left: 26%;
+    top: 30%;
+}
+#a-login{
+    font-size: 20px;
+    position:relative;
+    top: 20%;
+    left: 57%;
+    text-decoration: aqua;
+
+}
 
