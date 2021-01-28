@@ -1,143 +1,193 @@
-.div-ingreso{
-    background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 450px;
-    margin: 4% 31% auto 30%;
-    border-radius: 9%;
-    border-style: solid;
-    border-color: rgb(17, 65, 110);
+.div-ingreso {
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: 450px;
+  margin: 4% 31% auto 30%;
+  border-radius: 9%;
+  border-style: solid;
+  border-color: rgb(17, 65, 110);
 }
-#body-index{
-   background-image: url("../images/fondo_index.jpg");
+#body-index {
+  background-image: url("../images/fondo_index.jpg");
 }
-h1{
-    color:black;
-    text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 300%;
-    
+h1 {
+  color: black;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 300%;
 }
-.button-index{
-    background-color:rgb(223, 223, 223);
-    height: 80px;
-    width: 200px;
-    font-size: 25px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+.a-index {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  margin: 0;
+  background-color: rgba(190, 188, 188, 0.959);
+  padding: 20px;
+  color: black;
+  text-decoration: none;
 }
-#btn_login{
+.a-index:hover {
+  background-color: rgba(206, 206, 206, 0.959);
+}
+
+#a-index-login {
+  position: absolute;
+  top: 45%;
+  right: 43%;
+}
+#a-index-registro {
+  position: absolute;
+  top: 60%;
+  right: 44%;
+}
+
+th {
+  width: 200px;
+  height: 100px;
+}
+.tabla_img {
+  position: relative;
+  float: left;
+  top: 25%;
+  border-spacing: 50px;
+}
+.img-galeria {
+  height: 190px;
+  width: 370px;
+  transition: transform 0.8s;
+}
+.img-galeria:hover {
+  transform: scale(1.5);
+}
+#body-galeria {
+  background-image: url("../images/fondo-galeria.jpg");
+}
+#body-login {
+  background-image: url("../images/fondo-login.jpg");
+}
+.div-ingreso-datos {
+  position: relative;
+  top: 3%;
+  left: 22%;
+  font-size: 25px;
+  margin: 30px 0px 0px 0px;
+}
+#div-ingreso-login{
     position: absolute;
-    left: 41.5%;
-    top: 42%;
-      
+    top:8%;
+    right: -1%;
 }
-#btn_registro{
-    position: absolute;
-    top: 65%;
-    left: 41.5%;
-    
+.input-registro {
+  height: 25px;
+  width: 40px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-th{
-    width: 200px;
-    height: 100px;
+.label-registro {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-.tabla_img{
-    position: relative;
-    float: left;
-    top: 25%;
-    border-spacing: 50px;
-
+#username {
+    background-color: #94999c; 
+  position: relative;
+  left: 70px;
+  width: 10%;
+  transition: width, 0.5s ease-in-out;
 }
-.img-galeria{
-   height: 190px;
-   width: 370px;
-   transition: transform 0.8s;
-
+#username:focus {
+  width: 40%;
+  background-color: #ffffff;
 }
-.img-galeria:hover{
-    transform: scale(1.5);
-    
+#user-password {
+    background-color: #94999c; 
+  position: relative;
+  left: 31px;
+  width: 10%;
+  transition: width, 0.5s ease-in-out;
 }
-#body-galeria{
-    background-image: url("../images/fondo-galeria.jpg");
-
-   
-}
-#body-login{
-    background-image: url("../images/fondo-login.jpg");
-    
-}
-.div-ingreso-datos{
-    
-    position: relative;
-    top: 15%;
-    left: 15%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
-    margin: 5px 0px 20px 0px;
-    
-}
-#username{
-    position: relative;
-    left: 70px;
+#user-password:focus {
+  width: 40%;
+  background-color: #ffffff;
 
 }
-#user-password{
-    position: relative; 
-    left:31px;
+#user-email {
+  background-color: #94999c; 
+  position: relative;
+  left: 83px;
+  width: 10%;
+  transition: width, 0.5s ease-in-out;
 }
-#p-login{
+#user-email:focus {
+  width: 40%;
+  background-color: #ffffff;
+}
+.input-login {
+    height: 25px;
+    width: 40px;
     font-size: 20px;
-    position:relative;
-    left: 26%;
-    top: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+.label-login {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+#p-login {
+  font-size: 20px;
+  position: relative;
+  left: 23%;
+  top: 29.8%;
 }
-#a-login{
-    font-size: 20px;
-    position:relative;
-    top: 20%;
-    left: 57%;
-    text-decoration: aqua;
+#a-login {
+  font-size: 20px;
+  position: relative;
+  top: 20%;
+  left: 57%;
+  text-decoration: aqua;
+}
+#body-registro {
+  background-image: url("../images/fondo-registro.jpg");
+}
+#div-ingreso-registro {
+  background-color: rgb(255, 255, 255);
+  width: 550px;
+  height: 500px;
+  position: relative;
+  right: 1%;
+  border-radius: 9%;
+  border-style: solid;
+  border-color: rgb(17, 65, 110);
+}
+#a-registro {
+  font-size: 20px;
+  position: relative;
+  top: 23%;
+  left: 57%;
+  text-decoration: none;
+  color: rgb(56, 56, 56);
+  margin: 0;
+}
+#a-registro:hover {
+  color: rgb(0, 174, 255);
+}
+#p-registro {
+  font-size: 20px;
+  position: relative;
+  top: 32%;
+  left: 23%;
+}
 
+#a-submit-registro {
+  background-color: rgb(207, 207, 207);
+  padding: 10px;
+  color: black;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  left: 44%;
+  bottom: 27%;
+  text-decoration: none;
+  margin: 0;
+  border: 2px solid;
 }
-#body-registro{
-    background-image: url("../images/fondo-registro.jpg");
-}
-#div-ingreso-registro{
-    background-color: rgb(255, 255, 255);
-    width: 550px;
-    height: 500px;
-    position:relative;
-    right: 1%;
-    border-radius: 9%;
-    border-style: solid;
-    border-color: rgb(17, 65, 110);
-
-}
-#a-registro{
-    font-size: 20px;
-    position:relative;
-    top: 24.9%;
-    left: 57%;
-}
-#p-registro{
-    font-size: 20px;
-    position:relative;
-    top: 33.5%;
-    left: 23%;
-}
-#email-user{
-    position: relative;
-    left:81px;
-}
-#btn-submit-registro{
-    background-color:rgb(223, 223, 223);
-    height: 50px;
-    width: 170px;
-    font-size: 25px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: absolute;
-    left: 43%;
-    bottom: 25%;
+#a-submit-registro:hover {
+  background-color: rgb(216, 215, 215);
 }
