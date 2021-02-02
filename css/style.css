@@ -86,7 +86,50 @@ th {
 .label-registro {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-#username {
+#username-reg {
+    background-color: #94999c; 
+  position: relative;
+  left: 70px;
+  width: 10%;
+  transition: width, 0.5s ease-in-out;
+}
+#username-reg:focus {
+  width: 40%;
+  background-color: #ffffff;
+}
+#user-password-reg {
+    background-color: #94999c; 
+  position: relative;
+  left: 31px;
+  width: 10%;
+  transition: width, 0.5s ease-in-out;
+}
+#user-password-reg:focus {
+  width: 40%;
+  background-color: #ffffff;
+
+}
+#user-email-reg {
+  background-color: #94999c; 
+  position: relative;
+  left: 83px;
+  width: 10%;
+  transition: width, 0.5s ease-in-out;
+}
+#user-email-reg:focus {
+  width: 40%;
+  background-color: #ffffff;
+}
+.input-login {
+    height: 25px;
+    width: 40px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+.label-login {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  #username {
     background-color: #94999c; 
   position: relative;
   left: 70px;
@@ -120,15 +163,6 @@ th {
   width: 40%;
   background-color: #ffffff;
 }
-.input-login {
-    height: 25px;
-    width: 40px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-.label-login {
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
 #p-login {
   font-size: 20px;
   position: relative;
@@ -141,6 +175,23 @@ th {
   top: 20%;
   left: 57%;
   text-decoration: aqua;
+}
+#a-submit-login {
+  background-color: rgb(207, 207, 207);
+  padding: 10px;
+  color: black;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  left: 47%;
+  top: 62%;
+  text-decoration: none;
+  margin: 0;
+  border: 2px solid;
+}
+#a-submit-login:hover {
+  background-color: rgb(216, 215, 215);
 }
 #body-registro {
   background-image: url("../images/fondo-registro.jpg");
