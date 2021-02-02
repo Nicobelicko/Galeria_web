@@ -1,6 +1,7 @@
 
+
 document.getElementById('a-submit-registro').addEventListener('click',registerNewUser);
-document.getElementById('a-submit-registro').addEventListener('click',registerNewUser);
+
 
 
 
@@ -45,6 +46,7 @@ function getUserlist(){
 }
 function review(username,password){
      alert('entra en revisión');
+     let Userlist = getUserlist();
      let pass =false;
      
     for(let i=0;i < Userlist.length;i++){
@@ -56,11 +58,17 @@ function review(username,password){
     return pass;
 }
 function loginUser(){
-    let Username= '', Password= '', Email= '';
-
-    Username = document.getElementById('nombre-usuario').value;
+    let Username= '', Password= '';
+    
+    Username = document.getElementById('username').value;
     Password = document.getElementById('user-password').value;
-   
+    
+    let pass = review(Username, Password);
+    if(pass==true){
+        alert('Bienvenido');
+    }else{
+        alert('Usuario no existe');
+    }
 
 }
 
