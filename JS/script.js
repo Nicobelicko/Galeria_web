@@ -1,13 +1,13 @@
 
-
-document.getElementById('a-submit-registro').addEventListener('click',registerNewUser);
-
-
-
-
-
 let Userlist =[];
-
+let a = document.getElementById('a-submit-registro');
+if(a){
+    a.addEventListener('click',registerNewUser);
+}
+let b = document.getElementById('enter-login')
+if(b){
+    b.addEventListener('click',login);
+}
 function registerNewUser(){
     
     
@@ -32,7 +32,7 @@ function registerNewUser(){
     
 }
 function addInUserlist(pnewUser){
-    Userlist=getUserlist();
+    let Userlist=getUserlist();
     Userlist.push(pnewUser);
     localStorage.setItem('LSUserlist',JSON.stringify(Userlist));
 
@@ -52,12 +52,15 @@ function review(username,password){
     for(let i=0;i < Userlist.length;i++){
         if(username==Userlist[i][0]&&password==Userlist[i][1]){
             pass = true;
+            alert('entro al if');
         }
         
     }
     return pass;
 }
-function loginUser(){
+
+function login(){
+    
     let Username= '', Password= '';
     
     Username = document.getElementById('username').value;
