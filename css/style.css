@@ -1,4 +1,4 @@
-.div-ingreso {
+.div-login {
   background-color: rgb(255, 255, 255);
   width: 500px;
   height: 450px;
@@ -200,8 +200,9 @@ th {
   background-color: rgb(255, 255, 255);
   width: 550px;
   height: 500px;
-  position: relative;
-  right: 1%;
+  position: absolute;
+  left: 28%;
+  top: 7%;
   border-radius: 9%;
   border-style: solid;
   border-color: rgb(17, 65, 110);
@@ -245,19 +246,67 @@ th {
 #forgot-password{
   border-color: black ;
   border: 0px solid;
-  border-radius: 7%;
+  border-radius: 30%;
   text-align: center;
   background-color: rgb(255, 255, 255);
   color: black;
   font-size: 20px;
   position: absolute;
-  right: 413px;
-  top: 81%;
-  width: 500px;
+  right: 427px;
+  top: 80%;
+  width: 470px;
 }
 #forgot-password:hover{
   background-color: rgb(134, 131, 131);
   color:white ;
   transition: background-color 0.4s ease-in-out;
+  cursor: pointer;
+}
+#div-login-forgot{
+  display:none;
   
+  
+}
+#div-username-forgot{
+  top:90px;
+}
+#div-email-forgot{
+  top:110px;
+ 
+}
+#enter-forgot{
+  position: absolute;
+  top: 65%;
+  right: 45%;
+  background-color: rgb(207, 207, 207);
+  padding: 10px;
+  color: black;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  margin: 0;
+  border: 2px solid;
+  display: none;
+}
+#enter-forgot:hover{
+  background-color: rgb(216, 215, 215);
+}
+#username-forgot{
+  background-color: #94999c; 
+  width: 10%;
+  transition: width, 0.5s ease-in-out;
+}
+#username-forgot:hover{
+  width: 40%;
+  background-color: #ffffff;
+}
+#email-forgot{
+  background-color: #94999c; 
+  width: 10%;
+  transition: width, 0.5s ease-in-out;
+}
+#email-forgot:hover{
+  width: 40%;
+  background-color: #ffffff;
 }
