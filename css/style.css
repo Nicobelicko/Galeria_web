@@ -400,3 +400,9 @@ th {
   color: white;
   border-radius: 5%;
 }
+#body-about{
+  background-image: src("../images/fondo-about.jpg");
+}
+#div-about-1{
+  background-color: aqua;
+}
