@@ -17,7 +17,7 @@
   position: absolute;
   left: 30%;
   top: 20%;
-  border-radius: 15%;
+  
   border-style: solid;
   border-color: rgb(17, 65, 110);
   text-align: left;
@@ -39,14 +39,14 @@ h1 {
   text-decoration: none;
   text-align: center;
   width: 580px;
-  height: 50px;
+  height: 70px;
   transition: color , 0.4s ease-in-out;
 }
 
 
 #a-index-login {
   position: absolute;
-  top: 15%;
+  top: 3%;
   background-color:rgba(30, 143, 255, 0.335);
 }
 #a-index-login:hover{
@@ -80,6 +80,56 @@ th {
 .img-galeria:hover {
   transform: scale(1.5);
 }
+.img-container {
+  width: 372px;
+  height: 192px;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.5s;
+
+}
+
+.img-container:before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .1s ease-out;
+  background-color: rgba(92, 3, 3, 0.609); 
+  filter: blur(1.3px);
+}
+
+.img-container:hover:before { 
+  opacity: 1;
+}
+
+
+.img-container:hover { 
+
+  transform:  scale(1.1);
+
+}
+
+.img-container .text-container {
+  width: inherit;
+  padding: 5px 15px;
+  color: rgb(245, 238, 238);
+  position: absolute;
+  top: 100%; 
+
+}
+
+.img-container:hover .text-container {
+  top: 1%;
+}
+
+.titulo-tabla{
+    font-size: 30px;
+}
+
 #body-galeria {
   background-image: url("../images/fondo-galeria.jpg");
 }
@@ -330,4 +380,23 @@ th {
 #email-forgot:hover{
   width: 40%;
   background-color: #ffffff;
+}
+#div-menu{
+  background-color: rgba(255, 0, 0, 0.513);
+  width: 1350px;
+  height: 40px;
+  font-size: 30px;
+  
+}
+.a-galeria{
+  margin-left: 60px;
+  padding: 30px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: background-color, 0.4s ease-in-out;
+}
+.a-galeria:hover{
+  background-color: black;
+  color: white;
+  border-radius: 5%;
 }

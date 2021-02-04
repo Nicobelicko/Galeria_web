@@ -84,7 +84,7 @@ function review(username, password,email,key) {
   for (let i = 0; i < Userlist.length; i++) {
     if (username == Userlist[i][0] && password == Userlist[i][1]) {
       if(key == 1){
-        console.log('entra al if de registro');
+        
       if(email == Userlist[i][2]){
       pass = true;
       }
