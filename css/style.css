@@ -401,8 +401,41 @@ th {
   border-radius: 5%;
 }
 #body-about{
-  background-image: src("../images/fondo-about.jpg");
+ background-image: url("../images/about-fondo.jpg");
 }
-#div-about-1{
-  background-color: aqua;
+.img-about{
+  width: 300px;
+  height: 300px;
 }
+#div1-about{
+  background-color: rgba(255, 102, 0, 0.52);
+  margin: 0px 0px 0px 0px;
+}
+#div2-about{
+  background-color: rgba(255, 217, 0, 0.39);
+  top: 50%;
+}
+#div3-about{
+  background-color: rgba(17, 0, 255, 0.472);
+  
+  left: 50.5%;
+  
+}
+.div-about{
+  width: 666px;
+  height: 300px;
+  position: absolute;
+}
+#p-html{
+  position: absolute;
+  right: 10px;
+  top:300px;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+.div-about{
+  text-align: center;
+}
+
+
