@@ -53,7 +53,8 @@ function registerNewUser(usr,pswrd,emil) {
     if (pass == false) {
       newUser.push(Username, Password, Email);
       addInUserlist(newUser);
-      window.location.href = "galeria.html";
+      alert("Registro exitoso");
+      window.location.href = "login.html";
     } else {
       alert("Usuario ya registrado");
     }
