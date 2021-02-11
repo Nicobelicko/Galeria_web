@@ -14,42 +14,42 @@
             <h1>Iniciar Sesion</h1>
             <div class="div-ingreso-datos">
                 <label class="label-login">Usuario</label>
-                <input class="input-login" type="text" id="username" name="nombre-usuario">
+                <input class="input-login" type="text" id="username" name="nombre_usuario">
 
 
             </div>
             <div class="div-ingreso-datos">
                 <label class="label-login">Contraseña </label>
-                <input class="input-login" type="password" id="user-password" name="password-usuario">
+                <input class="input-login" type="password" id="user-password" name="password_usuario">
 
             </div>
             <p id="p-login">¿No tiene cuenta?</p>
             <a id="a-login" href="registro.html">Registrarse</a>
         </div>
-        <input id="enter-login" type="button" value="Ingresar">
+        <button onclick="login(this.form.nombre_usuario.value,this.form.password_usuario.value);" id="enter-login" type="button" >Ingresar</button>
     </form>
 
-    <a id="forgot-password">Olvidé mi contraseña</a>
+    <a onclick="show_div_forgot();" id="forgot-password">Olvidé mi contraseña</a>
 
 
     <form >
     <div class=" div-login", id="div-login-forgot">
         <div class="div-ingreso-datos" id="div-username-forgot">
             <label class="label-login">Usuario</label>
-            <input class="input-login" type="text" id="username-forgot">
+            <input class="input-login" type="text" id="username-forgot" name="username">
 
 
         </div>
 
         <div class="div-ingreso-datos" id="div-email-forgot">
             <label class="label-login">Email</label>
-            <input class="input-login" type="email" id="email-forgot">
+            <input class="input-login" type="email" id="email-forgot" name="user_email">
 
         </div>
 
         </div>
 
-        <input id="enter-forgot" type="button" value="Enviar">
+        <button onclick="find_password(this.form.username.value,this.form.user_email.value);" id="enter-forgot" type="button" >Enviar</button>
     </form>
 
 

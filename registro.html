@@ -13,25 +13,25 @@
             <h1>Registrarme</h1>
             <div class="div-ingreso-datos">
                 <label class="label-registro">Usuario</label>
-                <input class="input-registro" type="text" id="username-reg" name="nombre-usuario"> 
+                <input class="input-registro" type="text" id="username-reg" name="name_user"> 
                 
 
             </div>
             <div class="div-ingreso-datos">
                 <label class="label-registro">Contraseña </label>
-                <input class="input-registro" type="password" id="user-password-reg" name="password-usuario"> 
+                <input class="input-registro" type="password" id="user-password-reg" name="password_user"> 
                 
             </div>
             <div class="div-ingreso-datos">
                 <label class="label-registro">E-mail</label>
-                <input class="input-registro" type="email" id="user-email-reg" > 
+                <input class="input-registro" type="email" id="user-email-reg" name="email_user" > 
                 
             </div>
             <p id="p-registro">¿Ya tiene una cuenta?</p>
             <a id="a-registro" href="login.html">Iniciar Sesion</a>
         </div>
         
-        <input id="a-submit-registro" type="button" value="Enviar">
+        <button onclick="registerNewUser(this.form.name_user.value,this.form.password_user.value,this.form.email_user.value);" id="a-submit-registro" type="button">Enviar</button>
     </form>
     <script src="js/script.js" type="text/javascript"></script>
 </body>

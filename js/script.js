@@ -1,28 +1,26 @@
+
 let Userlist = [];
+let div_login;
+let div_forgot;
+let btn_forgot; 
+let enter_login; 
+let enter_forgot; 
+let Username;
+let Password ;
+let Email;
 
-
-
-let div_login = document.getElementById('div-ingreso-login');
-let div_forgot = document.getElementById('div-login-forgot');
-let btn_forgot = document.getElementById('forgot-password');
-let enter_login = document.getElementById('enter-login');
-let enter_forgot = document.getElementById('enter-forgot');
-
-let a = document.getElementById("a-submit-registro");
-if (a) {
-  a.addEventListener("click", registerNewUser);
+window.onload=onloadfunc();
+function onloadfunc(){
+  div_login= document.getElementById('div-ingreso-login');
+  div_forgot= document.getElementById('div-login-forgot');
+  enter_forgot= document.getElementById('enter-forgot');
+  enter_login= document.getElementById('enter-login');
+  btn_forgot=document.getElementById('forgot-password');
 }
-let b = document.getElementById("enter-login");
-if (b) {
-  b.addEventListener("click", login);
-}
 
 
 
-btn_forgot.addEventListener('click',show_div_forgot );
-btn_forgot.addEventListener('click',ocultar_div_login );
 
-enter_forgot.addEventListener('click',find_password);
 
 function show_div_forgot(){
   
@@ -31,6 +29,7 @@ function show_div_forgot(){
   div_forgot.style.top= '8%';
   div_forgot.style.left= '2.9%';
   enter_forgot.style.display='block';
+  ocultar_div_login();
 }
 function ocultar_div_login(){
   div_login.style.display='none';
@@ -40,16 +39,14 @@ function ocultar_div_login(){
 }
 
 
-function registerNewUser() {
+function registerNewUser(usr,pswrd,emil) {
   
   let newUser = [],
-    Username = "",
-    Password = "",
-    Email = "";
+    Username = usr,
+    Password = pswrd,
+    Email = emil;
 
-  Username = document.getElementById("username-reg").value;
-  Password = document.getElementById("user-password-reg").value;
-  Email = document.getElementById("user-email-reg").value;
+  
 
   if (Username != "" && Password != "" && Email != "") {
     let pass = review(Username, Password,Email,1);
@@ -96,12 +93,11 @@ function review(username, password,email,key) {
   return pass;
 }
 
-function login() {
-  let Username = "",
-    Password = "";
+function login(usr,pswrd) {
+  
 
-  Username = document.getElementById("username").value;
-  Password = document.getElementById("user-password").value;
+  Username = usr;
+  Password = pswrd;
   if (Username != "" && Password != "") {
     let pass = review(Username, Password,null,0);
     if (pass == true) {
@@ -113,12 +109,11 @@ function login() {
       alert('Ingrese todos los campos');
   }
 }
-function find_password(){
+function find_password(usr,emil){
   let Userlist = getUserlist();
-  let Username = "";
-  let Email = "";
-   Username = document.getElementById('username-forgot').value;
-   Email = document.getElementById('email-forgot').value;
+   Username = usr;
+   Email = emil;
+  
   let Password = "";
 
   if (Username != "" && Email != "") {
