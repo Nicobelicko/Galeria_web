@@ -129,7 +129,9 @@ function find_password(usr,emil){
         Password ='No se puedo recuperar, no se encontro el usuario';
       }
     }
+    window.location.href ="/login.html";
     alert('Su contraseña  '+Password);
+   
   }else{
       alert('Ingrese todos los campos');
   }
