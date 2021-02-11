@@ -434,8 +434,81 @@ th {
   font-family:Arial, Helvetica, sans-serif;
   
 }
-.div-about{
-  text-align: center;
+.img-container-about {
+  width: 372px;
+  height: 250px;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.5s;
+
+}
+
+.img-container-about:before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .1s ease-out;
+  background-color: rgba(3, 5, 92, 0.609); 
+  filter: blur(1.3px);
+}
+
+.img-container-about:hover:before { 
+  opacity: 1;
 }
 
 
+.img-container-about:hover { 
+
+  transform:  scale(1.1);
+
+}
+
+.img-container-about .text-container {
+  width: inherit;
+  padding: 5px 15px;
+  color: rgb(245, 238, 238);
+  position: absolute;
+  top: 100%; 
+
+}
+
+.img-container-about:hover .text-container {
+  top: 1%;
+}
+#html5-img:before{
+  background-color: rgba(209, 83, 10, 0.719);
+}
+#css-img:before{
+  background-color: rgba(10, 47, 209, 0.609);
+}
+#js-img:before{
+  background-color: rgba(238, 177, 9, 0.609);
+}
+#description-site{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:25px;
+  text-align:center;
+  position: relative;
+  left: 10px;
+  background-color:rgba(0, 0, 0, 0.918);
+  width:1330px;
+  height:150px;
+  margin:20px 0px 30px 0px;
+  border: black 3px solid;
+  transition: color, 0.4s ease-in-out;
+}
+#description-site:hover{
+  background-color:rgba(255, 0, 0, 0.924);
+  
+}
+#github{
+  text-decoration: none;
+  color:black;
+}
+#github:hover{
+  color:rgb(0, 17, 255);
+}
