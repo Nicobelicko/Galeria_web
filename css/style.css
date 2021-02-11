@@ -515,7 +515,7 @@ th {
   transition: color, 0.4s ease-in-out;
 }
 #description-site:hover{
-  background-color:rgba(255, 0, 0, 0.924);
+  background-color:rgba(255, 0, 0, 0.438);
   
 }
 #github{
