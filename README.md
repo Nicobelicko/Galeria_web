@@ -2,7 +2,7 @@
 
 Este es un sitio web realizado como actividad para Plataformas de programación empresarial.
 
-#La página se estructura de la siguiente manera:
+# La página se estructura de la siguiente manera:
 
 #Carpetas:
 #css
