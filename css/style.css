@@ -75,7 +75,7 @@ th {
   position: relative;
   float: left;
   top: 25%;
-  border-spacing: 50px;
+  border-spacing: 40px;
 }
 .img-galeria {
   height: 190px;
@@ -134,10 +134,12 @@ th {
 
 .titulo-tabla{
     font-size: 30px;
+    left: 10px;
 }
 
 #body-galeria {
   background-image: url("../images/fondo-galeria.jpg");
+  
 }
 #body-login {
   background-image: url("../images/fondo-login.jpg");
@@ -397,7 +399,7 @@ th {
 }
 #div-menu-galeria{
   background-color: rgba(255, 0, 0, 0.609);
-  width: 1350px;
+  width: 1333px;
   height: 40px;
   font-size: 30px;
   
@@ -537,14 +539,14 @@ h2{
 }
 #p-about{
   color: rgb(255, 255, 255);
-  text-align:start;
   font-size:19px;
+  float: left;
   
   
 }
 h4{
  position: relative;
- right:20px;
+ float: left;
  color:black;
 }
 #div-description{
