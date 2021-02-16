@@ -120,10 +120,11 @@ th {
 
 .img-container .text-container {
   width: inherit;
-  padding: 5px 15px;
-  color: rgb(245, 238, 238);
+  right:10px;
+  padding: 0;
+  color: rgb(255, 255, 255);
   position: absolute;
-  top: 100%; 
+  
 
 }
 
@@ -284,7 +285,7 @@ th {
   height: 500px;
   position: absolute;
   left: 28%;
-  top: 7%;
+  top: 9%;
   border-radius: 9%;
   border-style: solid;
   border-color: rgb(17, 65, 110);
@@ -394,13 +395,19 @@ th {
   width: 40%;
   background-color: #ffffff;
 }
-#div-menu{
-  background-color: rgba(255, 0, 0, 0.513);
+#div-menu-galeria{
+  background-color: rgba(255, 0, 0, 0.609);
   width: 1350px;
   height: 40px;
   font-size: 30px;
   
 }
+#div-menu-registro-login{
+  background-color: rgba(255, 255, 255, 0.609);
+  width: 1350px;
+  height: 40px;
+  font-size: 30px;
+} 
 .a-galeria{
   margin-left: 60px;
   padding: 30px;
@@ -448,8 +455,8 @@ th {
   
 }
 .img-container-about {
-  width: 372px;
-  height: 250px;
+  width: 400px;
+  height: 300px;
   padding: 5px 5px 5px 5px;
   position: relative;
   overflow: hidden;
@@ -499,32 +506,16 @@ th {
   background-color: rgba(10, 47, 209, 0.609);
 }
 #js-img:before{
-  background-color: rgba(238, 177, 9, 0.609);
+  background-color: rgba(255, 189, 6, 0.671);
 }
-#description-site{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size:25px;
-  margin:0;
-  text-align:center;
-  position: relative;
-  left: 0px;
-  background-color:rgba(0, 0, 0, 0.918);
-  width:1345px;
-  height:150px;
-  margin:20px 0px 30px 0px;
-  border: black 3px solid;
-  transition: color, 0.4s ease-in-out;
-}
-#description-site:hover{
-  background-color:rgba(255, 0, 0, 0.438);
-  
-}
+
 #github{
   text-decoration: none;
   color:black;
 }
 #github:hover{
-  color:rgb(0, 17, 255);
+  color:rgb(0, 89, 255);
+  
 }
 h2{
   margin:0;
@@ -532,4 +523,38 @@ h2{
   position: absolute;
   top:20px;
   left:60px;
+}
+#img-about{
+  height: 300px;
+  width: 390px;
+}
+.tabla_img_about {
+  position: relative;
+  float: left;
+  right: 10px;
+  top: 25%;
+  border-spacing: 40px;
+}
+#p-about{
+  color: rgb(255, 255, 255);
+  text-align:start;
+  font-size:19px;
+  
+  
+}
+h4{
+ position: relative;
+ right:20px;
+ color:black;
+}
+#div-description{
+  
+  font-size:20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: background-color, 0.4s ease-in-out;
+  height: 100px;
+  padding: 2px;
+}
+#div-description:hover{
+  background-color:#94999c8a;
 }
